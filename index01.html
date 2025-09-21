@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حجره ورقة مقص</title>
+  <link rel="stylesheet" href="style01.css">
+</head>
+
+<body>
+  <p class="dizain">Rock Paper Scissors</p>
+
+  <button onclick="
+     computerPlay();
+     playRols(computer, 1);
+    updateDisplay();
+    printScore();
+
+  "> ✊</button>
+
+  <button onclick="
+    computerPlay();
+    playRols(computer, 2);
+    updateDisplay();
+    printScore();
+    ">🖐️</button>
+
+  <button onclick="
+    computerPlay();
+    playRols(computer, 3);
+    updateDisplay();
+    printScore();
+    ">✌️</button>
+
+  <p id="output"></p>
+  <p id="cho"></p>
+  <p id="score">Win: 0 - Lose: 0 - Draw: 0</p>
+  <button onclick="resetScore()" id="ResetButton">Reset</button>
+   
+  <script src="Rolse.js"></script>
+</body>
+
+</html>
